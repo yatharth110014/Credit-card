@@ -141,6 +141,20 @@
                 </div>
             </div>
         </div>
+	       <script> 
+        const main_div = document.querySelector('.main_div');
+        const  center_div = document.querySelector('.center_div')
+        const  top_div = document.querySelector('.top_div h1')
+        
+main_div.addEventListener("mousemove", (e)=>{
+let XAxis = (window.innerWidth/2 - e.pageX)/10;
+let YAxis = (window.innerHeight/2 - e.pageY)/10;
+center_div.style.transform = `rotateY(${YAxis}deg)  rotateX(${XAxis}deg)`;
+})
+
+    </script> 
+ 
+	    
     </body>
 
 </html>
